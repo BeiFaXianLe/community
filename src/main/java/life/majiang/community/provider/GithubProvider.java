@@ -17,7 +17,8 @@ import java.io.IOException;
 
 public class GithubProvider {
     public String getAccessToken(AccessTokenDTO accesstokenDTO ){
-         MediaType mediaType = MediaType.get("application/json; charset=utf-8");
+
+        MediaType mediaType = MediaType.get("application/json; charset=utf-8");
 
         OkHttpClient client = new OkHttpClient();
         RequestBody body = RequestBody.create(mediaType, JSON.toJSONString(accesstokenDTO));

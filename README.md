@@ -15,3 +15,6 @@
 [Mybatis](http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
 
 [spring](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-sql)
+
+java -jar mybatis-generator-core-x.x.x.jar -configfile \temp\generatorConfig.xml -overwrite
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
